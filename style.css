@@ -1,0 +1,247 @@
+/* ==========================
+   RESET & IMPORTS
+========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* ==========================
+   BODY
+========================== */
+body {
+    background: #111111;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* ==========================
+   NAVIGATION
+========================== */
+nav {
+    background: #1b1b1b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    flex-wrap: wrap;
+    border-bottom: 3px solid #ff0000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav h2 {
+    color: #ffd700;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 12px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff0000;
+}
+
+nav button {
+    padding: 10px 18px;
+    border: none;
+    background: #ff0000;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+nav button:hover {
+    background: #ffd700;
+    color: #000000;
+}
+
+/* ==========================
+   ALL SECTIONS
+========================== */
+section {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 0;
+}
+
+section h2 {
+    text-align: center;
+    color: #ffd700;
+    margin-bottom: 25px;
+}
+
+/* ==========================
+   HERO
+========================== */
+#home {
+    text-align: center;
+    padding: 90px 20px;
+}
+
+#home h1 {
+    font-size: 42px;
+    color: #ff0000;
+}
+
+#home p {
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+#home button {
+    margin: 10px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #ff0000;
+    color: #ffffff;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+#home button:hover {
+    background: #ffd700;
+    color: #000000;
+}
+
+/* ==========================
+   WHAT IS CYBERSECURITY
+========================== */
+#cybersecurity {
+    background: #1b1b1b;
+    padding: 50px 30px;
+    border-left: 5px solid #ff0000;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+}
+
+#cybersecurity:hover {
+    border-left: 5px solid #ffd700;
+    background: #242424;
+}
+
+#cybersecurity h2 {
+    color: #ffd700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#cybersecurity p {
+    text-align: justify;
+    margin-bottom: 15px;
+    font-size: 17px;
+    color: #f0f0f0;
+}
+
+/* ==========================
+   THREATS & TIPS
+========================== */
+ol {
+    margin-top: 20px;
+}
+
+ol li {
+    background: #1e1e1e;
+    margin: 15px 0;
+    padding: 15px;
+    border-left: 5px solid #ff0000;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+ol li:hover {
+    transform: translateX(8px);
+    background: #2b2b2b;
+    border-left: 5px solid #ffd700;
+}
+
+strong {
+    color: #ffd700;
+}
+
+/* ==========================
+   EMERGENCY HELP
+========================== */
+#help h3 {
+    color: #ff0000;
+    margin-top: 20px;
+}
+
+#help p {
+    margin: 8px 0;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+footer {
+    background: #1b1b1b;
+    text-align: center;
+    padding: 25px;
+    border-top: 3px solid #ff0000;
+}
+
+footer h3 {
+    color: #ffd700;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+/* ==========================
+   RESPONSIVE (MOBILE)
+========================== */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        padding: 20px 5%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+    }
+
+    #home h1 {
+        font-size: 30px;
+    }
+
+    section {
+        width: 95%;
+    }
+
+    #home button {
+        width: 100%;
+        margin: 8px 0;
+    }
+}
